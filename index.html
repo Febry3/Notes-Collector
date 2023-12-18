@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notepad</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="popupBox">
+      <div class="popup">
+        <div class="content">
+          <header>
+            <p>Add Note</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-x"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+              />
+            </svg>
+          </header>
+          <form action="#">
+            <div class="title input">
+              <p>Title</p>
+              <!-- <label for="titl">Title</label> -->
+              <!-- <textarea name="title" id="titl"></textarea> -->
+              <div contenteditable id="titl"></div>
+            </div>
+            <div class="desc input">
+              <!-- <label for="desc"> Description </label> -->
+              <p>Description</p>
+              <div contenteditable id="desc" class="descr"></div>
+            </div>
+            <button>Confirm</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <h1 id="logo">NotesCollector</h1>
+      <div class="search" id="search">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-search"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+          />
+        </svg>
+        <p>Search Note</p>
+      </div>
+      <h1 id="nothing">NotesCollector</h1>
+    </nav>
+
+    <div class="wrapper">
+      <div class="addNote">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          fill="currentColor"
+          class="bi bi-plus"
+          viewBox="0 0 16 8"
+        >
+          <path
+            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+          />
+        </svg>
+        <p>Add note</p>
+      </div>
+    </div>
+    <footer><p>Created by Febry @2023</p></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
